@@ -6,8 +6,14 @@ const errorHandlerController = require("./controllers/errorHandler.controller");
 const server = http.createServer((req, res) => {
   if (req.url == "/api/products" && req.method == "GET") {
     productControllers.get(req, res);
+  } else if (req.url == "/api/products" && req.method == "POST") {
+    productControllers.create(req, res)
   } else if (req.url.match(/\/api\/products\/[0-9]+/) && req.method == "GET") {
     productControllers.getOne(req, res)
+  } else if (req.url.match(/\/api\/products\/[0-9]+/) && req.method == "PATCH") {
+    productControllers.update(req, res)
+  } else if (req.url.match(/\/api\/products\/[0-9]+/) && req.method == "DELETE") {
+    productControllers.remove(req, res)
   } else {
     errorHandlerController.notFound(res)
   }
