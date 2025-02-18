@@ -1,0 +1,10 @@
+// let buff = Buffer.from("NodeJs")
+let buff = Buffer.alloc(4)
+buff.write("NodeJs tutorial")
+buff[2] = 68
+console.log(buff)
+console.log(buff[0])
+console.log("N".charCodeAt())
+console.log("N".codePointAt())
+console.log("N".codePointAt().toString(16))
+console.log(buff.toString())
