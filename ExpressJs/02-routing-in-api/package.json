@@ -7,6 +7,7 @@
     "dev" : "nodemon node app.js",
     "match" : "nodemon node matched-routes.js",
     "query" : "nodemon node query.js",
+    "body" : "nodemon node body.js",
     "start": "node app.js"
   },
   "keywords": [],
