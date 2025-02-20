@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev" : "nodemon node app.js",
+    "match" : "nodemon node matched-routes.js",
     "start": "node app.js"
   },
   "keywords": [],
