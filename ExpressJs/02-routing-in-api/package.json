@@ -6,6 +6,7 @@
   "scripts": {
     "dev" : "nodemon node app.js",
     "match" : "nodemon node matched-routes.js",
+    "query" : "nodemon node query.js",
     "start": "node app.js"
   },
   "keywords": [],
