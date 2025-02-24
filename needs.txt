@@ -9,4 +9,7 @@ npm i {
 expressJS :
 npm i {
   express
+  morgan
+  camelcase-keys
+  omit-empty
 }
