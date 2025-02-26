@@ -12,4 +12,5 @@ npm i {
   morgan
   camelcase-keys
   omit-empty
+  mongoose
 }
