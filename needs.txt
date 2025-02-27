@@ -13,4 +13,7 @@ npm i {
   camelcase-keys
   omit-empty
   mongoose
+  express-validator
+  express-validation
+  joi
 }
