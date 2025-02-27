@@ -16,4 +16,5 @@ npm i {
   express-validator
   express-validation
   joi
+  validate
 }
