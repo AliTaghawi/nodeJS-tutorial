@@ -1,8 +1,9 @@
 const express = require("express")
 const { ErrorHandler, NotFoundError } = require("./utils/errorHandler")
 const { loginValidator, registerValidator } = require("./validators/auth.validator")
-const { validationResult } = require("express-validator")
 const { checkValidation } = require("./middlewares/validator")
+const { IDValidation } = require("./validators/params.validator")
+const { queryValidation } = require("./validators/query.validator")
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
@@ -26,6 +27,14 @@ app.post("/login",loginValidator(), checkValidation, (req, res, next) => {
 
 app.post("/register", registerValidator(), checkValidation, (req, res, next) => {
   res.send(req.body)
+})
+
+app.get("/blogs/:id", IDValidation, checkValidation, (req, res, next) => {
+  res.send(req.params)
+})
+
+app.get("/blogs", queryValidation(), checkValidation, (req, res, next) => {
+  res.send(req.query)
 })
 
 app.use(NotFoundError)

@@ -7,7 +7,6 @@ const checkValidation = (req, res, next) => {
     obj[err.path] = err.msg
   })
 
-  console.log(obj)
   if (Object.keys(obj).length > 0) {
     throw {
       status: 400,
