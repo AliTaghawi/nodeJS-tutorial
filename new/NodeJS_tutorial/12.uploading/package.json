@@ -1,0 +1,17 @@
+{
+  "name": "12.uploading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "multiparty": "^4.2.3",
+    "nodemon": "^3.1.11"
+  }
+}

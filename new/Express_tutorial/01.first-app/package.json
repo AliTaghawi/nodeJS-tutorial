@@ -1,0 +1,17 @@
+{
+  "name": "01.first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node body.js",
+    "dev": "nodemon node body.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.1",
+    "nodemon": "^3.1.11"
+  }
+}

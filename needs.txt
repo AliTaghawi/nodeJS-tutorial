@@ -3,6 +3,7 @@ npm init -y
 npm i {
   nodemon : //npm install --save-dev nodemon || npm install -D nodemon,
   mongodb,
+  multiparty
 }
 
 
